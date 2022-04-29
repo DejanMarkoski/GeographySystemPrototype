@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Domasna 2 DNICK 181062</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        function ShowQuiz() {
+            let div = document.getElementById("quizVision");
+            div.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-size: 20px">Home</a>
+        <a class="navbar-brand" href="quiz.html" style="font-size: 20px; color: red">Retry quiz</a>
+        <a class="navbar-brand" href="contact.html" style="font-size: 15px">Contact</a>
+    </div>
+</nav>
+<br>
+<div id="startQuiz" style="text-align: center">
+<button id="start" type="button" class="btn btn-danger" onclick="ShowQuiz()">Start the quiz now!</button>
+</div>
+<br>
+<div id="quizVision" style="display: none">
+<h3 style="text-align: center">To which country does this flag belong?</h3> <br>
+<img src="img/dk.png" style="display: block; margin-left: auto; margin-right: auto; height: 128px; width: 251px"> <br> <br>
+<div id="answers" style="text-align: center">
+    <button type="button" class="btn btn-secondary btn-lg">Denmark</button> <br><br>
+    <button type="button" class="btn btn-secondary btn-lg">Sweden</button> <br><br>
+    <button type="button" class="btn btn-secondary btn-lg">Finland</button> <br><br>
+    <button type="button" class="btn btn-secondary btn-lg">France</button> <br><br>
+</div>
+<br>
+</div>
+<h4 style="text-align: center">Score: </h4> <br>
+<h4 style="text-align: center">Time left: </h4> <br> <br> <br>
+*Static design for the purpose of the prototype
+</body>
+</html>
